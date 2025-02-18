@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Game Cover</title>
+</head>
+<body>
+    <div class="cover-container">
+        <img src="{{ cover_url }}" alt="Game Cover" class="cover-image">
+        <h1>Welcome to the Game!</h1>
+        <p>Click the button below to start your adventure.</p>
+        <a href="{{ url_for('enter') }}" class="start-button">Start Game</a>
+    </div>
+</body>
+</html>

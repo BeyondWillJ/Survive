@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Game</h1>
+        <div class="game-text">
+            <p>{{ text }}</p>
+        </div>
+        <div class="game-image">
+            {% if image %}
+                <img src="{{ image }}" alt="Game Scene">
+            {% endif %}
+        </div>
+        <div class="game-options">
+            {% for option in options %}
+                <form action="{{ url_for('action') }}" method="post">
+                    <input type="hidden" name="next" value="{{ option.next }}">
+                    <button type="submit">{{ option.text }}</button>
+                </form>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
