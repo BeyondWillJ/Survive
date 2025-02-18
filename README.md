@@ -1,6 +1,6 @@
 # 生存游戏机器人
 
-[![Release v1.0.0](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/BeyondWillJ/Survive/releases/)
+[![Release v1.0.0](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/BeyondWillJ/Survive/releases/tag/Survive)
 
 >你独自驾机飞越落基山脉，飞机却突然发生引擎故障，只得迫降山顶。孤立无援的你怎样才能在茫茫群山中生存下去？
 
